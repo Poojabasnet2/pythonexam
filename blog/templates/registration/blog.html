@@ -1,0 +1,11 @@
+{% block content %}
+<h1>BlogPost</h1>
+{% for blog in list %}
+<h5>{{blog.title}}</h5>
+<h5>{{blog.content}}</h5>
+<h5>{{blog.author}}</h5>
+<h5>{{blog.created_at}}</h5>
+<h5>{{blog.updated_at}}</h5>
+
+{% endfor %}
+{% endblock %}
